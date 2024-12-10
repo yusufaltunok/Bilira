@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.335" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation" name="Swap of USDT to BTC" time="0.056">
+<failure/>
+<system-out><![CDATA[
+Given The user goes to the url..............................................undefined
+When The user accepts the cookie on the page................................skipped
+And User clicks the login button............................................skipped
+And The user enters the e-mail address registered in the system.............skipped
+And The user enters the password registered in the system...................skipped
+And The user clicks the login button........................................skipped
+And User enters sms verification code.......................................skipped
+And Clicks the Send button..................................................skipped
+And User clicks on the search transaction pair box on the opened page.......skipped
+And Type the cryptocurrency to swap into the search box.....................skipped
+And The user clicks on the cryptocurrency to trade..........................skipped
+And The user clicks on the dropdown in the swap section of the cryptocurrency detail page..skipped
+And The user selects USDT from the box at the top of the cryptocurrency list.skipped
+And User types BTC in the asset search box..................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
