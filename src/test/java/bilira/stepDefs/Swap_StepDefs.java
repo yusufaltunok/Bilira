@@ -93,30 +93,6 @@ public class Swap_StepDefs {
     public void userTypesBTCInTheAssetSearchBox() {
         swapPages.getBtcText();
     }
-/*
-    @And("User clicks on BTC-USTD swap in the incoming table")
-    public void userClicksOnBTCUSTDSwapInTheIncomingTable() {
-    }
 
-    @Then("The user verifies that the trading pairs to be swapped are BTC-USDT")
-    public void theUserVerifiesThatTheTradingPairsToBeSwappedAreBTCUSDT() {
-    }
-
-    @When("The user enters the amount of money they want to exchange into the calculator")
-    public void theUserEntersTheAmountOfMoneyTheyWantToExchangeIntoTheCalculator() {
-    }
-
-    @Then("The user verifies that the amount entered in the calculator is displayed")
-    public void theUserVerifiesThatTheAmountEnteredInTheCalculatorIsDisplayed() {
-    }
-
-    @And("The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui")
-    public void theUserValidatesTheValueOfTheApproximateAmountTheyWantToSwapUsingTheApproximatePriceInformationDisplayedOnTheUi() {
-    }
-
-    @Then("User confirms that the buy text is clickable")
-    public void userConfirmsThatTheBuyTextIsClickable() {
-    }
-*/
 
 }
