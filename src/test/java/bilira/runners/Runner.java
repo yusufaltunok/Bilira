@@ -11,8 +11,9 @@ import org.junit.runner.RunWith;
         "junit:target/xml-report/cucumber.xml",
         "rerun:TestOutput/failed_scenario.txt"},
         features = "src/test/resources",
-        glue = {"step_definitions","hooks/Hooks"},
+        glue = {"bilira/step_definitions","bilira/hooks"},
         tags = "@swap",
+        publish = true,
         dryRun = false
 )
 

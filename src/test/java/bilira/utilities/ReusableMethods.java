@@ -119,7 +119,7 @@ public class ReusableMethods {
     public static void screenShot(String name) {
         String date = DateTimeFormatter.ofPattern("ddMMyyyy_HHmmss").format(LocalDateTime.now());
         TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
-        String dosyaYolu = System.getProperty("user.dir") + "example/address" + name + date + ".png";
+        String dosyaYolu = System.getProperty("user.dir") + "/example/address" + name + date + ".png";
 
         try {
             Files.write(Paths.get(dosyaYolu), ts.getScreenshotAs(OutputType.BYTES));
