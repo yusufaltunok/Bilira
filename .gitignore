@@ -1,0 +1,46 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Eclipse IDE
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# NetBeans
+nbproject/
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*~
+
+# Test reports
+test-output/
+
+# Cucumber Reports
+cucumber-reports/
+
+# Selenium WebDriver specific
+selenium-logs/
+
+example/
