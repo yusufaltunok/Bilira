@@ -7,11 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Bilira" />
-        <module name="Abonesepeti" />
-      </profile>
-    </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Abonesepeti" target="17" />
-    </bytecodeTargetLevel>
+
   </component>
 </project>

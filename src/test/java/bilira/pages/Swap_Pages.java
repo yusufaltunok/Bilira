@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Swap_Pages extends ReusableMethods {
 
-    public Swap_Pages(){
+    public Swap_Pages() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -41,17 +41,18 @@ public class Swap_Pages extends ReusableMethods {
     @FindBy(xpath = "//*[@class='input-search']")
     private WebElement coinSearchInput;
 
-    @FindBy(xpath = "//[@data-testid='list-item']//[@src='https://cdn.bilira.co/symbol/svg/USDT.svg']")
+    @FindBy(xpath = "//*[@data-testid=\"list-item\"]//*[@src=\"https://cdn.bilira.co/symbol/svg/USDT.svg\"]")
     private WebElement selectCoin;
 
-    @FindBy(xpath = "//[@class='tab-card-panel']//[@src='https://cdn.bilira.co/symbol/svg/USDT.svg']")
+    @FindBy(xpath = "//*[@class=\"tab-card-panel\"]//*[@src=\"https://cdn.bilira.co/symbol/svg/USDT.svg\"]")
     private WebElement swapPairSelect;
 
     @FindBy(xpath = "//*[@class='tab-header-item tab-boxed tab-boxed-sm'][3]")
     private WebElement usdtSwapSelect;
 
     @FindBy(xpath = "//*[@class='table-row clickable']")
-    private WebElement assetSelect;
+    private WebElement assetSelectTableRowClick;
+
 
     @FindBy(xpath = "//*[@class='meta-description']")
     private WebElement btcText;
@@ -67,6 +68,9 @@ public class Swap_Pages extends ReusableMethods {
 
     @FindBy(xpath = "//div[@data-testid='block' and @class='flex tw-flex-col gap-sm tw-items-center']/p[@data-testid='typography-text' and contains(@class, 'tw-text-xs')]")
     private WebElement approximateValueUI;
+
+    @FindBy(xpath = "//*[@class=\"button button-stretch button-variant-filled-success button-size-md tw-justify-center mt-2xl\"]")
+    public WebElement buyBtcButton;
 
 
     // Methods to interact with the elements
@@ -102,12 +106,18 @@ public class Swap_Pages extends ReusableMethods {
         submitOtpButton.click();
     }
 
-    public void searchCoin(String coin) {
-        visibleWait(coinSearchBtn,15);
+    public void searchCoinClick() {
+        visibleWait(coinSearchBtn, 15);
         coinSearchBtn.click();
-        coinSearchInput.sendKeys(coin);
     }
 
+    public void searchCoin(String coin) {
+        coinSearchBtn.sendKeys(coin);
+    }
+
+    public void coinSearcInput(String coin) {
+        coinSearchInput.sendKeys(coin);
+    }
     public void selectCoin() {
         selectCoin.click();
     }
@@ -120,8 +130,8 @@ public class Swap_Pages extends ReusableMethods {
         usdtSwapSelect.click();
     }
 
-    public void selectAsset() {
-        assetSelect.click();
+    public void selectAssetBox() {
+        assetSelectTableRowClick.click();
     }
 
     public String getBtcText() {
@@ -136,6 +146,9 @@ public class Swap_Pages extends ReusableMethods {
         amountInput.sendKeys(amount);
     }
 
+    public String getAmauntText() {
+        return amountInput.getAttribute("value");
+    }
     public String getBtcUsdtRateText() {
         return btcUsdtRateText.getText();
     }
