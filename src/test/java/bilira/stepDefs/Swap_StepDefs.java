@@ -113,6 +113,7 @@ public class Swap_StepDefs {
         ReusableMethods.bekle(2);
     }
 
+
     @And("User clicks on BTC-USTD swap in the incoming table")
     public void userClicksOnBTCUSTDSwapInTheIncomingTable() {
 //        # Ve Kullanıcı gelen tabloda BTC-USDT takasına tıklar.
@@ -195,6 +196,8 @@ public class Swap_StepDefs {
         Assert.assertTrue(displayed);
 
     }
+
+
 
 
 }
