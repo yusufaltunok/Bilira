@@ -1,0 +1,111 @@
+-------------------------------------------------------------------------------
+Test set: Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.151 s <<< FAILURE! -- in Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation
+Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation.Swap of USDT to BTC -- Time elapsed: 0.151 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'The user goes to the url.' and 19 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("The user goes to the url.")
+public void the_user_goes_to_the_url() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("The user accepts the cookie on the page.")
+public void the_user_accepts_the_cookie_on_the_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks the login button")
+public void user_clicks_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("The user enters the e-mail address registered in the system.")
+public void the_user_enters_the_e_mail_address_registered_in_the_system() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("The user enters the password registered in the system.")
+public void the_user_enters_the_password_registered_in_the_system() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("The user clicks the login button.")
+public void the_user_clicks_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User enters sms verification code")
+public void user_enters_sms_verification_code() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Clicks the Send button")
+public void clicks_the_send_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on the search transaction pair box on the opened page")
+public void user_clicks_on_the_search_transaction_pair_box_on_the_opened_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Type the cryptocurrency to swap into the search box")
+public void type_the_cryptocurrency_to_swap_into_the_search_box() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("The user clicks on the cryptocurrency to trade.")
+public void the_user_clicks_on_the_cryptocurrency_to_trade() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("The user clicks on the dropdown in the swap section of the cryptocurrency detail page.")
+public void the_user_clicks_on_the_dropdown_in_the_swap_section_of_the_cryptocurrency_detail_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("The user selects USDT from the box at the top of the cryptocurrency list")
+public void the_user_selects_usdt_from_the_box_at_the_top_of_the_cryptocurrency_list() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User types BTC in the asset search box")
+public void user_types_btc_in_the_asset_search_box() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on BTC-USTD swap in the incoming table")
+public void user_clicks_on_btc_ustd_swap_in_the_incoming_table() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("The user verifies that the trading pairs to be swapped are BTC-USDT")
+public void the_user_verifies_that_the_trading_pairs_to_be_swapped_are_btc_usdt() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("The user enters the amount of money they want to exchange into the calculator")
+public void the_user_enters_the_amount_of_money_they_want_to_exchange_into_the_calculator() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("The user verifies that the amount entered in the calculator is displayed")
+public void the_user_verifies_that_the_amount_entered_in_the_calculator_is_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui")
+public void the_user_validates_the_value_of_the_approximate_amount_they_want_to_swap_using_the_approximate_price_information_displayed_on_the_ui() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User confirms that the buy text is clickable")
+public void user_confirms_that_the_buy_text_is_clickable() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

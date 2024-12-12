@@ -1,4 +1,4 @@
-package bilira.stepDefs;
+package bilira.step_definitions;
 
 import bilira.pages.Swap_Pages;
 import bilira.utilities.ConfigReader;
@@ -8,22 +8,20 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.eo.Do;
-import io.cucumber.java.sl.In;
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 
-import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Swap_StepDefs {
+public class Swap_StepDefinitions {
     Swap_Pages swapPages = new Swap_Pages();
     String amaunt;
 
     @Given("The user goes to the url.")
     public void theUserGoesToTheUrl() {
         Driver.getDriver().get(ConfigReader.getProperty("Url"));
+        ReusableMethods.screenShot("sc");
     }
 
 
@@ -74,6 +72,7 @@ public class Swap_StepDefs {
     @And("User clicks on the search transaction pair box on the opened page")
     public void userClicksOnTheSearchTransactionPairBoxOnTheOpenedPage() {
 //        Ve Kullanıcı açılan sayfada işlem çiftini arama kutusuna tıklar
+
         ReusableMethods.screenShot("HomePage");
         swapPages.searchCoinClick();
     }
@@ -183,9 +182,9 @@ public class Swap_StepDefs {
         } else {
             throw new IllegalStateException("Approximate value not found in text: " + approximateValueUI);
         }
-
+//        ReusableMethods.screenShot("AmountAssertion");
         Assert.assertEquals(approximateAmaunt, numericValue, 0.0000001);
-        ReusableMethods.screenShot("AmountAssertion");
+
 
     }
 

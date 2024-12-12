@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="45.856" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation" name="Swap of USDT to BTC" time="44.428">
+<failure type="java.lang.AssertionError" message="expected:&lt;0.9836323575700346&gt; but was:&lt;9.8363235E-4&gt;">
+<![CDATA[java.lang.AssertionError: expected:<0.9836323575700346> but was:<9.8363235E-4>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:685)
+	at bilira.step_definitions.Swap_StepDefinitions.theUserValidatesTheValueOfTheApproximateAmountTheyWantToSwapUsingTheApproximatePriceInformationDisplayedOnTheUi(Swap_StepDefinitions.java:185)
+	at ✽.The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui(file:///home/livde/IdeaProjects/Bilira/src/test/resources/Swap_100_USDT_to_BTC.feature:22)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user goes to the url..............................................passed
+When The user accepts the cookie on the page................................passed
+And User clicks the login button............................................passed
+And The user enters the e-mail address registered in the system.............passed
+And The user enters the password registered in the system...................passed
+And The user clicks the login button........................................passed
+And User enters sms verification code.......................................passed
+And Clicks the Send button..................................................passed
+And User clicks on the search transaction pair box on the opened page.......passed
+And Type the cryptocurrency to swap into the search box.....................passed
+And The user clicks on the cryptocurrency to trade..........................passed
+And The user clicks on the dropdown in the swap section of the cryptocurrency detail page..passed
+And The user selects USDT from the box at the top of the cryptocurrency list.passed
+And User types BTC in the asset search box..................................passed
+And User clicks on BTC-USTD swap in the incoming table......................passed
+Then The user verifies that the trading pairs to be swapped are BTC-USDT....passed
+When The user enters the amount of money they want to exchange into the calculator.passed
+Then The user verifies that the amount entered in the calculator is displayed.passed
+And The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui.failed
+Then User confirms that the buy text is clickable...........................skipped
+]]></system-out>
+</testcase>
+</testsuite>
