@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13bde2d8-b45d-4e3c-9383-80625e3961ab" name="Changes" comment="Dec">
+      <change afterPath="$PROJECT_DIR$/browserstack.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bilira/utilities/ManuelMail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bilira/utilities/Otp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Swap_100_USDT_to_BTC_MailOtp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/addressEnterAmount12122024_205822.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/addressHomePage12122024_205803.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/addresssc12122024_205743.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/pages/Swap_Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/pages/Swap_Pages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/step_definitions/Swap_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/step_definitions/Swap_StepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber1.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/pages/Swap_Pages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/pages/Swap_Pages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/step_definitions/Swap_StepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/step_definitions/Swap_StepDefinitions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;livdemirci&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yusufaltunok/Bilira.git&quot;,
+    &quot;accountId&quot;: &quot;db863b0d-0192-4b35-810c-afa6e1c53b68&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="false" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2q2brqWO8XpMeBSNZ6uBn6l2maB" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GMailer.executor": "Run",
+    "Application.GetMail.executor": "Run",
+    "Application.GmailApi.executor": "Run",
+    "Application.GmailQuickstart (1).executor": "Run",
+    "Application.GmailQuickstart.executor": "Run",
+    "Application.ManuelMail.executor": "Run",
+    "Cucumber Java.Feature: Swap_100_USDT_to_BTC.executor": "Run",
+    "Cucumber Java.Scenario: Swap of USDT to BTC.executor": "Run",
+    "JUnit.Otp.testExample.executor": "Run",
+    "JUnit.Runner.executor": "Run",
+    "Maven.Bilira [clean].executor": "Run",
+    "Maven.Bilira [compile].executor": "Run",
+    "Maven.Bilira [test].executor": "Run",
+    "Maven.Bilira [validate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "livde",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/livde/IdeaProjects/Bilira/src/test/resources",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Feature: Swap_100_USDT_to_BTC_MailOtp">
+    <configuration name="GmailQuickstart (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GmailQuickstart" />
+      <module name="Bilira" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmailQuickstart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bilira.utilities.GmailQuickstart" />
+      <module name="Bilira" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bilira.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManuelMail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bilira.utilities.ManuelMail" />
+      <module name="Bilira" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bilira.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: Swap_100_USDT_to_BTC" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Swap_100_USDT_to_BTC.feature" />
+      <option name="GLUE" value="bilira.step_definitions bilira.hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Bilira" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Swap_100_USDT_to_BTC" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: Swap_100_USDT_to_BTC_MailOtp" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Swap_100_USDT_to_BTC_MailOtp.feature" />
+      <option name="GLUE" value="bilira.step_definitions bilira.hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Bilira" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Swap_100_USDT_to_BTC_MailOtp" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Feature: Swap_100_USDT_to_BTC_MailOtp" />
+        <item itemvalue="Application.ManuelMail" />
+        <item itemvalue="Cucumber Java.Feature: Swap_100_USDT_to_BTC" />
+        <item itemvalue="Application.GmailQuickstart" />
+        <item itemvalue="Application.GmailQuickstart (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13bde2d8-b45d-4e3c-9383-80625e3961ab" name="Changes" comment="" />
+      <created>1733863818717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733863818717</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Dec">
+      <option name="closed" value="true" />
+      <created>1733947831773</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733947831773</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <MESSAGE value="Dec" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dec" />
+  </component>
+</project>
