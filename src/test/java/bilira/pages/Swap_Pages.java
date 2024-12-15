@@ -72,6 +72,18 @@ public class Swap_Pages extends ReusableMethods {
     @FindBy(xpath = "//*[@class=\"button button-stretch button-variant-filled-success button-size-md tw-justify-center mt-2xl\"]")
     public WebElement buyBtcButton;
 
+    @FindBy(xpath = "//*[@class=\"input\"]")
+    private WebElement enterDigit;
+
+
+    @FindBy(xpath = "//input[@class=\"button\"]")
+    private WebElement phoneAddButton;
+
+    @FindBy(xpath = "//*[@class=\"link-button\"]")
+    private WebElement linkButton;
+
+    @FindBy(xpath = "//p//a")
+    private WebElement skipButton;
 
     // Methods to interact with the elements
     public void acceptCookies() {
@@ -80,6 +92,10 @@ public class Swap_Pages extends ReusableMethods {
         } catch (Exception e) {
             System.out.println("Cookies not found");
         }
+    }
+
+    public void otpInputClick() {
+        otpInput.click();
     }
 
     public void clickLoginButton() {
@@ -146,6 +162,16 @@ public class Swap_Pages extends ReusableMethods {
         amountInput.sendKeys(amount);
     }
 
+    public void enterDigitOtp(String digit) {
+        enterDigit.sendKeys(digit);
+    }
+    public void phoneAddButtonClick() {
+        linkButton.click();
+    }
+
+    public void skipButtonClick() {
+        skipButton.click();
+    }
     public String getAmauntText() {
         return amountInput.getAttribute("value");
     }

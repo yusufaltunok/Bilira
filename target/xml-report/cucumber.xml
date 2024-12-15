@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="45.856" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation" name="Swap of USDT to BTC" time="44.428">
-<failure type="java.lang.AssertionError" message="expected:&lt;0.9836323575700346&gt; but was:&lt;9.8363235E-4&gt;">
-<![CDATA[java.lang.AssertionError: expected:<0.9836323575700346> but was:<9.8363235E-4>
+<testsuite name="Cucumber" time="49.517" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation" name="Swap of USDT to BTC" time="47.53">
+<failure type="java.lang.AssertionError" message="expected:&lt;0.9816047274083672&gt; but was:&lt;9.8160472E-4&gt;">
+<![CDATA[java.lang.AssertionError: expected:<0.9816047274083672> but was:<9.8160472E-4>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:555)
 	at org.junit.Assert.assertEquals(Assert.java:685)
-	at bilira.step_definitions.Swap_StepDefinitions.theUserValidatesTheValueOfTheApproximateAmountTheyWantToSwapUsingTheApproximatePriceInformationDisplayedOnTheUi(Swap_StepDefinitions.java:185)
+	at bilira.step_definitions.Swap_StepDefinitions.theUserValidatesTheValueOfTheApproximateAmountTheyWantToSwapUsingTheApproximatePriceInformationDisplayedOnTheUi(Swap_StepDefinitions.java:189)
 	at ✽.The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui(file:///home/livde/IdeaProjects/Bilira/src/test/resources/Swap_100_USDT_to_BTC.feature:22)
 ]]>
 </failure>

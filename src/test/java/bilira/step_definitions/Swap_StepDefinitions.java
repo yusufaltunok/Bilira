@@ -1,9 +1,7 @@
 package bilira.step_definitions;
 
 import bilira.pages.Swap_Pages;
-import bilira.utilities.ConfigReader;
-import bilira.utilities.Driver;
-import bilira.utilities.ReusableMethods;
+import bilira.utilities.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,6 +9,9 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 
+import javax.mail.MessagingException;
+import java.io.IOException;
+import java.security.GeneralSecurityException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -26,7 +27,9 @@ public class Swap_StepDefinitions {
 
 
     @When("The user accepts the cookie on the page.")
-    public void theUserAcceptsTheCookieOnThePage() {
+    public void theUserAcceptsTheCookieOnThePage() throws MessagingException, GeneralSecurityException, IOException {
+
+
         swapPages.acceptCookies();
     }
 
@@ -44,6 +47,7 @@ public class Swap_StepDefinitions {
 
     @And("The user enters the e-mail address registered in the system.")
     public void theUserEntersTheEMailAddressRegisteredInTheSystem() {
+
         swapPages.enterEmail(ConfigReader.getProperty("email"));
         ReusableMethods.bekle(1);
     }
@@ -60,6 +64,7 @@ public class Swap_StepDefinitions {
 
     @And("User enters sms verification code")
     public void userEntersSmsVerificationCode() {
+        swapPages.otpInputClick();
         ReusableMethods.bekle(15);
         //  swapPages.enterOtp("");
     }
@@ -195,8 +200,45 @@ public class Swap_StepDefinitions {
         Assert.assertTrue(displayed);
 
     }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    @And("Users enters mail verification code")
+    public void usersEntersMailVerificationCode() throws MessagingException, GeneralSecurityException, IOException {
+        ReusableMethods.bekle(5);
+        GmailQuickstart gmailQuickstart = new GmailQuickstart();
+
+        // Gmail'den digit değerini almak için öncelikle fetch metodunu çağır
+        gmailQuickstart.fetchDigitFromGmail();
+
+        // Şimdi digit değerini alabiliriz
+        String digitValue = gmailQuickstart.getDigit();
+
+        // Değeri yazdır
+        System.out.println("Alınan digit değeri: " + digitValue);
+
+        swapPages.enterDigitOtp(digitValue);
 
 
+    }
 
+    @And("User clicks phone add button")
+    public void userClicksPhoneAddButton() {
+        swapPages.phoneAddButtonClick();
+    }
 
+    @And("User clicks skip button")
+    public void userClicksSkipButton() {
+        swapPages.skipButtonClick();
+    }
+
+    @And("The user enters the e-mail address registered in the system for e-mail otp.")
+    public void theUserEntersTheEMailAddressRegisteredInTheSystemForEMailOtp() {
+        swapPages.enterEmail(ConfigReader.getProperty("email2"));
+        ReusableMethods.bekle(1);
+    }
+
+    @And("The user enters the password registered in the system for e-mail otp.")
+    public void theUserEntersThePasswordRegisteredInTheSystemForEMailOtp() {
+        swapPages.enterPassword(ConfigReader.getProperty("password2"));
+    }
 }
