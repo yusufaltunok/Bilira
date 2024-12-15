@@ -185,8 +185,8 @@
         <item itemvalue="Cucumber Java.Feature: Swap_100_USDT_to_BTC_MailOtp" />
         <item itemvalue="Cucumber Java.Feature: Swap_100_USDT_to_BTC" />
         <item itemvalue="Application.ManuelMail" />
-        <item itemvalue="Application.GmailQuickstart" />
         <item itemvalue="Application.GmailQuickstart (1)" />
+        <item itemvalue="Application.GmailQuickstart" />
       </list>
     </recent_temporary>
   </component>

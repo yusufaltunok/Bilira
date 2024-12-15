@@ -24,6 +24,7 @@ Feature:Validate with e-mail otp that a swap of USDT to BTC is executed successf
     And The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui
     Then User confirms that the buy text is clickable
 
+#
 
 
 
