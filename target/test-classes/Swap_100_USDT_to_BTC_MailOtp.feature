@@ -1,5 +1,5 @@
 @swap
-Feature:Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation
+Feature:Validate with e-mail otp that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation
   Scenario:Swap of USDT to BTC
     Given The user goes to the url.
     When The user accepts the cookie on the page.
@@ -24,6 +24,7 @@ Feature:Validate that a swap of USDT to BTC is executed successfully, with real-
     And The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui
     Then User confirms that the buy text is clickable
 
+#
 
 
 
