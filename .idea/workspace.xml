@@ -6,12 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="13bde2d8-b45d-4e3c-9383-80625e3961ab" name="Changes" comment="Dec">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tokens/Mustafa/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/Tokens/Mustafa/StoredCredential" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tokens/ReceiveTokens/StoredCredential" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/browserstack-plugin.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/browserstack-plugin.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/utilities/ManuelMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/utilities/ManuelMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/utilities/ManuelMail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/utilities/ManuelMail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Swap_100_USDT_to_BTC.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Swap_100_USDT_to_BTC.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Swap_100_USDT_to_BTC_MailOtp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Swap_100_USDT_to_BTC_MailOtp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber1.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Swap_100_USDT_to_BTC.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Swap_100_USDT_to_BTC.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Swap_100_USDT_to_BTC_MailOtp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Swap_100_USDT_to_BTC_MailOtp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/runners/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/runners/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,19 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GmailQuickstart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bilira.utilities.GmailQuickstart" />
-      <module name="Bilira" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bilira.utilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ManuelMail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bilira.utilities.ManuelMail" />
       <module name="Bilira" />
@@ -179,13 +171,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bilira" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bilira.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bilira.runners" />
+      <option name="MAIN_CLASS_NAME" value="bilira.runners.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: Swap_100_USDT_to_BTC_MailOtp" />
+        <item itemvalue="JUnit.Runner" />
         <item itemvalue="Application.ManuelMail" />
         <item itemvalue="Cucumber Java.Feature: Swap_100_USDT_to_BTC" />
         <item itemvalue="Application.GmailQuickstart (1)" />
-        <item itemvalue="Application.GmailQuickstart" />
       </list>
     </recent_temporary>
   </component>
