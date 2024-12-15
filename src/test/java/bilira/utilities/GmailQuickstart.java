@@ -23,8 +23,6 @@ import javax.mail.*;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
@@ -36,36 +34,20 @@ public class GmailQuickstart {
 
     private static final String APPLICATION_NAME = "MailProject";
     private static final JsonFactory JSON_FACTORY = GsonFactory.getDefaultInstance();
-    private static final String TOKENS_DIRECTORY_PATH = "Tokens/ReceiveTokens";
-    private static final String user = "qatester1532@gmail.com";
+    private String tokensDirectoryPath;
+    private String user;
+    private String credentialsFilePath;
 
-    // 6 haneli sayıyı saklamak için sınıf değişkeni
-    private String digit;
+    private String digit; // 6 haneli sayıyı saklamak için sınıf değişkeni
+
+    public GmailQuickstart(String user, String tokensDirectoryPath, String credentialsFilePath) {
+        this.user = user;
+        this.tokensDirectoryPath = tokensDirectoryPath;
+        this.credentialsFilePath = credentialsFilePath;
+    }
 
     public String getDigit() {
         return digit; // Getter metodu ile erişim sağlanır
-    }
-
-    public void setDigit(String digit) {
-        this.digit = digit; // Setter metodu ile değer ataması yapılır
-    }
-
-    private static final List<String> SCOPES = Collections.singletonList(GmailScopes.GMAIL_READONLY);
-    private static final String CREDENTIALS_FILE_PATH = "/test.json";
-
-    private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
-        InputStream in = GmailQuickstart.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
-        if (in == null) {
-            throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
-        }
-        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
-        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
-                HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
-                .setDataStoreFactory(new FileDataStoreFactory(new java.io.File(TOKENS_DIRECTORY_PATH)))
-                .setAccessType("offline")
-                .build();
-        LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
-        return new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
     }
 
     public void fetchDigitFromGmail() throws IOException, GeneralSecurityException, MessagingException {
@@ -97,8 +79,24 @@ public class GmailQuickstart {
             String sixDigitCode = extractSixDigitCodeFromHTML(content);
 
             // Sınıf değişkenine atama
-            setDigit(sixDigitCode); // sınıf değişkenine atama
+            digit = sixDigitCode;
         }
+    }
+
+    private Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
+        InputStream in = new FileInputStream(this.credentialsFilePath);
+        if (in == null) {
+            throw new FileNotFoundException("Credential file not found: " + this.credentialsFilePath);
+        }
+        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
+
+        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
+                HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, Collections.singletonList(GmailScopes.GMAIL_READONLY))
+                .setDataStoreFactory(new FileDataStoreFactory(new File(this.tokensDirectoryPath)))
+                .setAccessType("offline")
+                .build();
+        LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
+        return new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
     }
 
     private static String extractSixDigitCodeFromHTML(String content) {
@@ -145,5 +143,18 @@ public class GmailQuickstart {
             }
         }
         return result.toString();
+    }
+
+    public static void main(String[] args) throws IOException, GeneralSecurityException, MessagingException {
+        // Kullanıcı, token dizini ve credential dosyası bilgilerini sağlayın
+        GmailQuickstart gmailQuickstart = new GmailQuickstart(
+                "farkli.kullanici@gmail.com", // E-posta adresi
+                "Tokens/DifferentUserTokens", // Tokenlerin saklandığı dizin
+                "path/to/another_credentials.json" // Credential dosyasının yolu
+        );
+
+        // Mesajlardan 6 haneli kodu çek
+        gmailQuickstart.fetchDigitFromGmail();
+        System.out.println("6 Haneli Kod: " + gmailQuickstart.getDigit());
     }
 }

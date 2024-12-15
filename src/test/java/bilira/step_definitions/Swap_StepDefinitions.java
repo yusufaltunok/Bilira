@@ -204,12 +204,14 @@ public class Swap_StepDefinitions {
 
     @And("Users enters mail verification code")
     public void usersEntersMailVerificationCode() throws MessagingException, GeneralSecurityException, IOException {
-        ReusableMethods.bekle(5);
-        GmailQuickstart gmailQuickstart = new GmailQuickstart();
-
-        // Gmail'den digit değerini almak için öncelikle fetch metodunu çağır
+                GmailQuickstart gmailQuickstart = new GmailQuickstart(
+                ConfigReader.getProperty("email2"),
+                "Tokens/Mustafa",
+                "src/test/resources/mustafa.json"
+        );
+        ReusableMethods.bekle(10);
+        // Mesajlardan 6 haneli kodu çek
         gmailQuickstart.fetchDigitFromGmail();
-
         // Şimdi digit değerini alabiliriz
         String digitValue = gmailQuickstart.getDigit();
 
