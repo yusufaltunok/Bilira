@@ -8,9 +8,9 @@ public class ManuelMail {
 
     public static void main(String[] args) throws MessagingException, GeneralSecurityException, IOException {
         GmailQuickstart gmailQuickstart = new GmailQuickstart(
-                "testquality1tester@gmail.com",
-                "Tokens/Mustafa",
-                "src/test/resources/mustafa.json"
+                "qatester1532@gmail.com",
+                "Tokens/ReceiveTokens",
+                "src/test/resources/test.json"
         );
 
         // Mesajlardan 6 haneli kodu çek

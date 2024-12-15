@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="13bde2d8-b45d-4e3c-9383-80625e3961ab" name="Changes" comment="Dec">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tokens/ReceiveTokens/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/Tokens/ReceiveTokens/StoredCredential" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tokens/Mustafa/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/Tokens/Mustafa/StoredCredential" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tokens/ReceiveTokens/StoredCredential" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/step_definitions/Swap_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/step_definitions/Swap_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/utilities/GmailQuickstart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/utilities/GmailQuickstart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/browserstack-plugin.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/browserstack-plugin.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/bilira/utilities/ManuelMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/utilities/ManuelMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/mustafa.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/mustafa.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Swap_100_USDT_to_BTC_MailOtp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Swap_100_USDT_to_BTC_MailOtp.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/step_definitions/Swap_StepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/step_definitions/Swap_StepDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/utilities/GmailQuickstart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/utilities/GmailQuickstart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/utilities/ManuelMail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/utilities/ManuelMail.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
