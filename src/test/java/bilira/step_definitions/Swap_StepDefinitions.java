@@ -230,4 +230,15 @@ public class Swap_StepDefinitions {
     public void userClicksSkipButton() {
         swapPages.skipButtonClick();
     }
+
+    @And("The user enters the e-mail address registered in the system for e-mail otp.")
+    public void theUserEntersTheEMailAddressRegisteredInTheSystemForEMailOtp() {
+        swapPages.enterEmail(ConfigReader.getProperty("email2"));
+        ReusableMethods.bekle(1);
+    }
+
+    @And("The user enters the password registered in the system for e-mail otp.")
+    public void theUserEntersThePasswordRegisteredInTheSystemForEMailOtp() {
+        swapPages.enterPassword(ConfigReader.getProperty("password2"));
+    }
 }
