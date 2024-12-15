@@ -1,5 +1,5 @@
 @swap
-Feature:Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation
+Feature:Validate with e-mail otp that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation
   Scenario:Swap of USDT to BTC
     Given The user goes to the url.
     When The user accepts the cookie on the page.
