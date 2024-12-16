@@ -203,15 +203,15 @@ public class Swap_StepDefinitions {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     @And("Users enters mail verification code")
-    public void usersEntersMailVerificationCode() throws MessagingException, GeneralSecurityException, IOException {
+    public void usersEntersMailVerificationCode() throws MessagingException, GeneralSecurityException, IOException, InterruptedException {
         GmailQuickstart gmailQuickstart = new GmailQuickstart(
                 ConfigReader.getProperty("email2"),
                 ConfigReader.getProperty("tokenDirectoryPath"),
                 ConfigReader.getProperty("jsonDirectoryPath")
         );
-        ReusableMethods.bekle(10);
+
         // Mesajlardan 6 haneli kodu çek
-        gmailQuickstart.fetchDigitFromGmail();
+        gmailQuickstart.fetchAndProcessNewEmail();
         // Şimdi digit değerini alabiliriz
         String digitValue = gmailQuickstart.getDigit();
 
