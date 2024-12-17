@@ -39,48 +39,93 @@ public class GmailQuickstart {
     private String credentialsFilePath;
 
     private String digit; // 6 haneli sayıyı saklamak için sınıf değişkeni
+    private String lastMessageId; // Son gelen mesajın ID'sini saklamak için sınıf değişkeni
 
     public GmailQuickstart(String user, String tokensDirectoryPath, String credentialsFilePath) {
         this.user = user;
         this.tokensDirectoryPath = tokensDirectoryPath;
         this.credentialsFilePath = credentialsFilePath;
+        this.lastMessageId = ""; // Başlangıçta herhangi bir mesaj ID'si yok
     }
 
     public String getDigit() {
         return digit; // Getter metodu ile erişim sağlanır
     }
 
-    public void fetchDigitFromGmail() throws IOException, GeneralSecurityException, MessagingException {
+    // Yeni mesaj geldiğinde eski mesajları silip, yeni mesajı işleyen metot
+    public void fetchAndProcessNewEmail() throws IOException, GeneralSecurityException, MessagingException, InterruptedException {
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
         Gmail service = new Gmail.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
                 .setApplicationName(APPLICATION_NAME)
                 .build();
 
-        // Kullanıcının mesajlarını listeleme
-        ListMessagesResponse messagesResponse = service.users().messages().list(user).setMaxResults(1L).execute();
-        List<Message> messages = messagesResponse.getMessages();
+        int maxAttempts = 10; // Maksimum deneme sayısı (yeni mesaj için)
+        int attempt = 0;
+        boolean newMessageFound = false;
 
-        if (messages == null || messages.isEmpty()) {
-            System.out.println("Hiç mesaj bulunamadı.");
-        } else {
-            String messageId = messages.get(0).getId();
-            Message message = service.users().messages().get(user, messageId).setFormat("raw").execute();
+        while (attempt < maxAttempts && !newMessageFound) {
+            // Yeni mesajı kontrol et
+            ListMessagesResponse messagesResponse = service.users().messages().list(user).setMaxResults(1L).execute();
+            List<Message> messages = messagesResponse.getMessages();
 
-            // Mesaj içeriğini çözümleme
-            byte[] emailBytes = Base64.decodeBase64(message.getRaw());
-            Properties props = new Properties();
-            Session session = Session.getDefaultInstance(props, null);
-            MimeMessage email = new MimeMessage(session, new ByteArrayInputStream(emailBytes));
+            if (messages != null && !messages.isEmpty()) {
+                String messageId = messages.get(0).getId();
 
-            // Mesajın içeriğini al
-            String content = extractMessageContent(email);
+                // Eğer son mesaj ile yeni gelen mesajın ID'si farklıysa işle
+                if (!messageId.equals(lastMessageId)) {
+                    // Yeni mesajı al
+                    Message message = service.users().messages().get(user, messageId).setFormat("raw").execute();
 
-            // 6 haneli sayıyı regex ile bul
-            String sixDigitCode = extractSixDigitCodeFromHTML(content);
+                    // Mesaj içeriğini çözümleme
+                    byte[] emailBytes = Base64.decodeBase64(message.getRaw());
+                    Properties props = new Properties();
+                    Session session = Session.getDefaultInstance(props, null);
+                    MimeMessage email = new MimeMessage(session, new ByteArrayInputStream(emailBytes));
 
-            // Sınıf değişkenine atama
-            digit = sixDigitCode;
+                    // Mesajın içeriğini al
+                    String content = extractMessageContent(email);
+
+                    // 6 haneli sayıyı regex ile bul
+                    String sixDigitCode = extractSixDigitCodeFromHTML(content);
+
+                    if (sixDigitCode != null) {
+                        // OTP kodu bulundu
+                        digit = sixDigitCode;
+                        System.out.println("Yeni gelen 6 haneli kod: " + sixDigitCode);
+                        newMessageFound = true;  // Yeni mesaj bulundu, döngüyü sonlandır
+
+                        // Mesajı sil
+                        deleteMessage(service, messageId);
+                    } else {
+                        System.out.println("Geçerli bir OTP kodu bulunamadı.");
+                    }
+
+                    // Son mesaj ID'sini güncelle
+                    lastMessageId = messageId;
+                } else {
+                    System.out.println("Henüz yeni bir mesaj gelmedi.");
+                }
+            } else {
+                System.out.println("Yeni mesaj yok.");
+            }
+
+            if (!newMessageFound) {
+                // Yeni mesaj gelmediyse belirli bir süre bekle
+                System.out.println("Yeni mesaj gelmedi, " + (attempt + 1) + " deneme yapıldı. Bekleniyor...");
+                attempt++;
+                Thread.sleep(5000);  // 5 saniye bekle
+            }
         }
+
+        if (!newMessageFound) {
+            System.out.println("Max deneme sayısına ulaşıldı, yeni mesaj alınamadı.");
+        }
+    }
+
+    // Mesajı silme metodu
+    private void deleteMessage(Gmail service, String messageId) throws IOException {
+        service.users().messages().delete(user, messageId).execute();
+        System.out.println("Mesaj silindi: " + messageId);
     }
 
     private Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
@@ -91,7 +136,7 @@ public class GmailQuickstart {
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
 
         GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
-                HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, Collections.singletonList(GmailScopes.GMAIL_READONLY))
+                HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, Collections.singletonList(GmailScopes.MAIL_GOOGLE_COM))
                 .setDataStoreFactory(new FileDataStoreFactory(new File(this.tokensDirectoryPath)))
                 .setAccessType("offline")
                 .build();
@@ -145,16 +190,16 @@ public class GmailQuickstart {
         return result.toString();
     }
 
-    public static void main(String[] args) throws IOException, GeneralSecurityException, MessagingException {
+    public static void main(String[] args) throws IOException, GeneralSecurityException, MessagingException, InterruptedException {
         // Kullanıcı, token dizini ve credential dosyası bilgilerini sağlayın
         GmailQuickstart gmailQuickstart = new GmailQuickstart(
-                "farkli.kullanici@gmail.com", // E-posta adresi
-                "Tokens/DifferentUserTokens", // Tokenlerin saklandığı dizin
-                "path/to/another_credentials.json" // Credential dosyasının yolu
+                ConfigReader.getProperty("email2"), // E-posta adresi
+                ConfigReader.getProperty("tokenDirectoryPath"), // Tokenlerin saklandığı dizin
+                ConfigReader.getProperty("jsonDirectoryPath") // Credential dosyasının yolu
         );
 
-        // Mesajlardan 6 haneli kodu çek
-        gmailQuickstart.fetchDigitFromGmail();
+        // Yeni gelen mesajı işle
+        gmailQuickstart.fetchAndProcessNewEmail();
         System.out.println("6 Haneli Kod: " + gmailQuickstart.getDigit());
     }
 }

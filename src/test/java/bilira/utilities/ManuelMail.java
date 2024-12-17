@@ -6,7 +6,7 @@ import java.security.GeneralSecurityException;
 
 public class ManuelMail {
 
-    public static void main(String[] args) throws MessagingException, GeneralSecurityException, IOException {
+    public static void main(String[] args) throws MessagingException, GeneralSecurityException, IOException, InterruptedException {
         GmailQuickstart gmailQuickstart = new GmailQuickstart(
                 "qatester1532@gmail.com",
                 "Tokens/ReceiveTokens",
@@ -14,7 +14,7 @@ public class ManuelMail {
         );
 
         // Mesajlardan 6 haneli kodu çek
-        gmailQuickstart.fetchDigitFromGmail();
+        gmailQuickstart.fetchAndProcessNewEmail();
         // Şimdi digit değerini alabiliriz
         String digitValue = gmailQuickstart.getDigit();
         System.out.println("digitValue = " + digitValue);
