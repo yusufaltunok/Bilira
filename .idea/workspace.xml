@@ -4,42 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13bde2d8-b45d-4e3c-9383-80625e3961ab" name="Changes" comment="Dec">
+    <list default="true" id="eff9de35-d517-40bf-92fc-4b24f6e8c271" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_24,_11_37 PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_24,_11_38 PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_24__11_37PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_24__11_38PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_24,_10_13 PM_[Changes]/GmailQuickstart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_24,_10_13 PM_[Changes]/ManuelMail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_24,_10_13 PM_[Changes]/StoredCredential" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_24,_10_13 PM_[Changes]/Swap_StepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_24,_10_13 PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_24__10_13PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tokens/Mustafa/StoredCredential" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tokens/ReceiveTokens/StoredCredential" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tokens/SendTokens/StoredCredential" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tokens/ReceiveTokens/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/Tokens/ReceiveTokens/StoredCredential" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/browserstack-plugin.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/browserstack-plugin.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/step_definitions/Swap_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/step_definitions/Swap_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/utilities/GmailQuickstart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/utilities/GmailQuickstart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/utilities/ManuelMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/utilities/ManuelMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/step_definitions/Swap_StepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/step_definitions/Swap_StepDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/utilities/GmailQuickstart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/utilities/GmailQuickstart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/utilities/ManuelMail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/utilities/ManuelMail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/hooks/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/hooks/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/hooks/Hooks.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExportToHTMLSettings">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -53,80 +46,30 @@
     &quot;accountId&quot;: &quot;db863b0d-0192-4b35-810c-afa6e1c53b68&quot;
   }
 }</component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="false" />
-        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="downloadAnnotationsAutomatically" value="true" />
-        <option name="downloadDocsAutomatically" value="true" />
-        <option name="downloadSourcesAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
-  </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2q2brqWO8XpMeBSNZ6uBn6l2maB" />
+  <component name="ProjectId" id="2qMAFt1tApT3yszQ1zdS1DZ0fSu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application.GMailer.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GetMail.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GmailApi.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GmailQuickstart (1).executor&quot;: &quot;Run&quot;,
     &quot;Application.GmailQuickstart.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ManuelMail.executor&quot;: &quot;Run&quot;,
     &quot;Cucumber Java.Feature: Swap_100_USDT_to_BTC.executor&quot;: &quot;Run&quot;,
     &quot;Cucumber Java.Feature: Swap_100_USDT_to_BTC_MailOtp.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Swap of USDT to BTC.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Otp.testExample.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Runner.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Bilira [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Bilira [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Bilira [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Bilira [validate].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;livde&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/livde/IdeaProjects/Bilira/src/test/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/resources" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
   <component name="RunManager" selected="Cucumber Java.Feature: Swap_100_USDT_to_BTC_MailOtp">
     <configuration name="GmailQuickstart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bilira.utilities.GmailQuickstart" />
-      <module name="Bilira" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bilira.utilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManuelMail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bilira.utilities.ManuelMail" />
       <module name="Bilira" />
       <extension name="coverage">
         <pattern>
@@ -176,54 +119,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Bilira" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bilira.runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bilira.runners" />
-      <option name="MAIN_CLASS_NAME" value="bilira.runners.Runner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: Swap_100_USDT_to_BTC_MailOtp" />
-        <item itemvalue="Application.GmailQuickstart" />
-        <item itemvalue="Application.ManuelMail" />
         <item itemvalue="Cucumber Java.Feature: Swap_100_USDT_to_BTC" />
-        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Application.GmailQuickstart" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="13bde2d8-b45d-4e3c-9383-80625e3961ab" name="Changes" comment="" />
-      <created>1733863818717</created>
+      <changelist id="eff9de35-d517-40bf-92fc-4b24f6e8c271" name="Changes" comment="" />
+      <created>1734461971866</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1733863818717</updated>
+      <updated>1734461971866</updated>
     </task>
-    <task id="LOCAL-00001" summary="Dec">
-      <option name="closed" value="true" />
-      <created>1733947831773</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1733947831773</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="first" />
-    <MESSAGE value="Dec" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dec" />
   </component>
 </project>
