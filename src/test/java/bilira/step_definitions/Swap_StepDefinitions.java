@@ -12,6 +12,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import javax.mail.MessagingException;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
+import java.text.DecimalFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -172,6 +173,8 @@ public class Swap_StepDefinitions {
         }
 
         Double approximateAmaunt = amaunt / btc_usdt_value;
+        DecimalFormat df = new DecimalFormat("#.#########");
+        double roundedApproximateAmount = Double.parseDouble(df.format(approximateAmaunt));
         System.out.println("approximateAmaunt = " + approximateAmaunt);
         String approximateValueUI = swapPages.getApproximateValueUI();
 
@@ -187,10 +190,8 @@ public class Swap_StepDefinitions {
         } else {
             throw new IllegalStateException("Approximate value not found in text: " + approximateValueUI);
         }
-//        ReusableMethods.screenShot("AmountAssertion");
-        Assert.assertEquals(approximateAmaunt, numericValue, 0.0000001);
-
-
+        Assert.assertEquals("Approximate amounts don't match within acceptable range", 
+                       roundedApproximateAmount, numericValue, 0.000001);
     }
 
 

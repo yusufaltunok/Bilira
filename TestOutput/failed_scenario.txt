@@ -1,1 +1,0 @@
-file:src/test/resources/Swap_100_USDT_to_BTC.feature:3
