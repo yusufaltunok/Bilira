@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         "rerun:TestOutput/failed_scenario.txt"},
         features = "src/test/resources",
         glue = {"bilira/step_definitions","bilira/hooks"},
-        tags = "@phoneOTP",
+        tags = "@mailOTP",
         publish = true,
         dryRun = false
 )

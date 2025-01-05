@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="50.881" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Validate that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation" name="Swap of USDT to BTC" time="48.866">
-<failure type="java.lang.IllegalStateException" message="BTC/USDT rate not found in text: Yaklaşık 0,00096798861 BTC">
-<![CDATA[java.lang.IllegalStateException: BTC/USDT rate not found in text: Yaklaşık 0,00096798861 BTC
-	at bilira.step_definitions.Swap_StepDefinitions.theUserValidatesTheValueOfTheApproximateAmountTheyWantToSwapUsingTheApproximatePriceInformationDisplayedOnTheUi(Swap_StepDefinitions.java:171)
-	at ✽.The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui(file:///home/livde/IdeaProjects/Bilira/src/test/resources/Swap_100_USDT_to_BTC.feature:22)
-]]>
-</failure>
+<testsuite name="Cucumber" time="45.889" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Validate with e-mail otp that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation" name="Swap of USDT to BTC" time="43.721">
 <system-out><![CDATA[
 Given The user goes to the url..............................................passed
 When The user accepts the cookie on the page................................passed
 And User clicks the login button............................................passed
-And The user enters the e-mail address registered in the system.............passed
-And The user enters the password registered in the system...................passed
+And The user enters the e-mail address registered in the system for e-mail otp..passed
+And The user enters the password registered in the system for e-mail otp....passed
 And The user clicks the login button........................................passed
-And User enters sms verification code.......................................passed
+And Users enters mail verification code.....................................passed
 And Clicks the Send button..................................................passed
+And User clicks phone add button............................................passed
+And User clicks skip button.................................................passed
 And User clicks on the search transaction pair box on the opened page.......passed
 And Type the cryptocurrency to swap into the search box.....................passed
 And The user clicks on the cryptocurrency to trade..........................passed
@@ -26,8 +22,8 @@ And User clicks on BTC-USTD swap in the incoming table......................pass
 Then The user verifies that the trading pairs to be swapped are BTC-USDT....passed
 When The user enters the amount of money they want to exchange into the calculator.passed
 Then The user verifies that the amount entered in the calculator is displayed.passed
-And The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui.failed
-Then User confirms that the buy text is clickable...........................skipped
+And The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui.passed
+Then User confirms that the buy text is clickable...........................passed
 ]]></system-out>
 </testcase>
 </testsuite>
