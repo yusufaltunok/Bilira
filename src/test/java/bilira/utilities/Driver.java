@@ -72,7 +72,7 @@ public class Driver {
                                 "--disable-dev-shm-usage",
                                 "--no-sandbox",
                                 "--disable-setuid-sandbox",
-                                "--window-size=1920,1080"
+                                "--window-size=1920x1080"
                         );
                         System.out.println("Running in CI environment");
                     }

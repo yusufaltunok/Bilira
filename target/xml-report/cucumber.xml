@@ -1,29 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="45.889" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Validate with e-mail otp that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation" name="Swap of USDT to BTC" time="43.721">
+<testsuite name="Cucumber" time="5.035" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Validate with e-mail otp that a swap of USDT to BTC is executed successfully, with real-time rates displayed before confirmation" name="Swap of USDT to BTC" time="3.007">
+<failure type="org.openqa.selenium.WebDriverException" message="disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.204)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47e1ff8b3b821b7900a2ac7c04b3d3f5, findElement {value=//a[@data-testid='login-btn'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.204, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36161/devtoo..., se:cdpVersion: 131.0.6778.204, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47e1ff8b3b821b7900a2ac7c04b3d3f5">
+<![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.204)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47e1ff8b3b821b7900a2ac7c04b3d3f5, findElement {value=//a[@data-testid='login-btn'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.204, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36161/devtoo..., se:cdpVersion: 131.0.6778.204, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47e1ff8b3b821b7900a2ac7c04b3d3f5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getAttribute(Unknown Source)
+	at bilira.step_definitions.Swap_StepDefinitions.userClicksTheLoginButton(Swap_StepDefinitions.java:39)
+	at ✽.User clicks the login button(file:///home/livde/IdeaProjects/Bilira/src/test/resources/Swap_100_USDT_to_BTC_MailOtp.feature:6)
+]]>
+</failure>
 <system-out><![CDATA[
 Given The user goes to the url..............................................passed
 When The user accepts the cookie on the page................................passed
-And User clicks the login button............................................passed
-And The user enters the e-mail address registered in the system for e-mail otp..passed
-And The user enters the password registered in the system for e-mail otp....passed
-And The user clicks the login button........................................passed
-And Users enters mail verification code.....................................passed
-And Clicks the Send button..................................................passed
-And User clicks phone add button............................................passed
-And User clicks skip button.................................................passed
-And User clicks on the search transaction pair box on the opened page.......passed
-And Type the cryptocurrency to swap into the search box.....................passed
-And The user clicks on the cryptocurrency to trade..........................passed
-And The user clicks on the dropdown in the swap section of the cryptocurrency detail page..passed
-And The user selects USDT from the box at the top of the cryptocurrency list.passed
-And User types BTC in the asset search box..................................passed
-And User clicks on BTC-USTD swap in the incoming table......................passed
-Then The user verifies that the trading pairs to be swapped are BTC-USDT....passed
-When The user enters the amount of money they want to exchange into the calculator.passed
-Then The user verifies that the amount entered in the calculator is displayed.passed
-And The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui.passed
-Then User confirms that the buy text is clickable...........................passed
+And User clicks the login button............................................failed
+And The user enters the e-mail address registered in the system for e-mail otp..skipped
+And The user enters the password registered in the system for e-mail otp....skipped
+And The user clicks the login button........................................skipped
+And Users enters mail verification code.....................................skipped
+And Clicks the Send button..................................................skipped
+And User clicks phone add button............................................skipped
+And User clicks skip button.................................................skipped
+And User clicks on the search transaction pair box on the opened page.......skipped
+And Type the cryptocurrency to swap into the search box.....................skipped
+And The user clicks on the cryptocurrency to trade..........................skipped
+And The user clicks on the dropdown in the swap section of the cryptocurrency detail page..skipped
+And The user selects USDT from the box at the top of the cryptocurrency list.skipped
+And User types BTC in the asset search box..................................skipped
+And User clicks on BTC-USTD swap in the incoming table......................skipped
+Then The user verifies that the trading pairs to be swapped are BTC-USDT....skipped
+When The user enters the amount of money they want to exchange into the calculator.skipped
+Then The user verifies that the amount entered in the calculator is displayed.skipped
+And The user validates the value of the approximate amount they want to swap using the approximate price information displayed on the ui.skipped
+Then User confirms that the buy text is clickable...........................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

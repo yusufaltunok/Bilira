@@ -81,7 +81,7 @@ public class Swap_Pages extends ReusableMethods {
 
     @FindBy(xpath = "//*[@class=\"link-button\"]")
     private WebElement linkButton;
-
+    //input[@class="button" and @type="submit"]
     @FindBy(xpath = "//p//a")
     private WebElement skipButton;
 
