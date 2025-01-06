@@ -7,11 +7,11 @@
     <list default="true" id="eff9de35-d517-40bf-92fc-4b24f6e8c271" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestOutput/failed_scenario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TestOutput/failed_scenario.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tokens/ReceiveTokens/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/Tokens/ReceiveTokens/StoredCredential" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/browserstack-plugin.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/browserstack-plugin.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/pages/Swap_Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/pages/Swap_Pages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber1.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bilira/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bilira/utilities/Driver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +55,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Swap_100_USDT_to_BTC_MailOtp">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="GmailQuickstart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bilira.utilities.GmailQuickstart" />
       <module name="Bilira" />
@@ -107,8 +107,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bilira" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bilira.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bilira.runners" />
+      <option name="MAIN_CLASS_NAME" value="bilira.runners.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Feature: Swap_100_USDT_to_BTC_MailOtp" />
         <item itemvalue="Cucumber Java.Feature: Swap_100_USDT_to_BTC" />
         <item itemvalue="Application.GmailQuickstart" />
