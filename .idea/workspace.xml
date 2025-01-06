@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eff9de35-d517-40bf-92fc-4b24f6e8c271" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestOutput/failed_scenario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TestOutput/failed_scenario.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tokens/ReceiveTokens/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/Tokens/ReceiveTokens/StoredCredential" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/browserstack-plugin.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/browserstack-plugin.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bilira/pages/Swap_Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bilira/pages/Swap_Pages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber1.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
-    </list>
+    <list default="true" id="eff9de35-d517-40bf-92fc-4b24f6e8c271" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,18 +34,19 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.GmailQuickstart.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: Swap_100_USDT_to_BTC.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: Swap_100_USDT_to_BTC_MailOtp.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;livde&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GmailQuickstart.executor": "Run",
+    "Cucumber Java.Feature: Swap_100_USDT_to_BTC.executor": "Run",
+    "Cucumber Java.Feature: Swap_100_USDT_to_BTC_MailOtp.executor": "Run",
+    "JUnit.Runner.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "livde",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="JUnit.Runner">
     <configuration name="GmailQuickstart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bilira.utilities.GmailQuickstart" />
